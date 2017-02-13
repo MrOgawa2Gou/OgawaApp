@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="../components/loader.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../components/loader.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+<body id="color"> 
+  <form>
+  <select id="PullMenu" onChange="JumpPage();">
+　　　<option value="#"></option>
+      <option value="1">問1 OSの構成と機能 動画</option>
+      <option value="2">問2 磁気ディスクとそ</option>
+      <option value="3">問3 磁気ディスク.. 動画</option>
+　　　<option value="4">問4 ジョブ管理 動画</option>　　　　　
+　　　<option value="5">問5 半導体素子</option>　　　　
+　　　<option value="6">問6 システムの構成方</option>　
+　　　<option value="7">問7 高速化方式</option>
+　　　<option value="8">問8 半導体素子 動画</option>
+　　　<option value="9">問9 プロセッサの性能</option>
+　　　<option value="10">問10 半導体素子</option>　
+　　　<option value="11">問11 RAIDの種..</option>
+　　　<option value="12">問12 出力装置の種..</option>
+　　　<option value="13">問13 半導体素子</option>
+　　　<option value="14">問14 半導体素子</option>
+　　　<option value="15">問15 システムの構..</option>
+　　　<option value="16">問16 RAIDの種..</option>
+　　　<option value="17">問17 プロセッサの構造</option>
+　　　<option value="18">問18 半導体素子</option>
+　　　<option value="19">問19 プロセッサの..</option>
+　　　<option value="20">問20 メモリキャッシュ 動画</option>
+　　　<option value="21">問21 半導体素子</option>
+　　　<option value="22">問22 磁気ディスク.. 動画</option>
+　　　<option value="23">問23 磁気ディスク.. 動画</option>
+　　　<option value="24">問24 性能計算</option>
+　　　<option value="25">問25 性能指標</option>
+　　　<option value="26">問26 OSの構成と機能</option>
+　　　<option value="27">問27 MIPS 動画</option>
+　　　<option value="28">問28 処理形態</option>
+　　　<option value="29">問29 0LTP</option>
+　　　<option value="30">問30 性能計算 動画</option>
+　　　<option value="31">問31 クライアント..</option>
+　　　<option value="32">問32 システムの構..</option>
+　　　<option value="33">問33 性能評価</option>
+　　　<option value="34">問34 性能計算 動画</option>
+　　　<option value="35">問35 プロセッサの性能 動画</option>
+　　　<option value="36">問36 OSの構成と機能</option>
+　　　<option value="37">問37 性能評価FE中分</option>
+　　　<option value="38">問38 信頼性計算稼働率 動画</option>
+　　　<option value="39">問39 プロセッサの性能 動画</option>
+　　　<option value="40">問40 信頼性計算 動画</option>
+</select>
+</form>
+
+<div style="text-align: center">
+
+        <h1 id="qNumD"></h1>
+        
+        <p id="question"></p>
+        
+        <div id="answer_options">
+        </div>
+        
+</div>
+
+<div id="Qbutton1">
+<input type="button" value="前の問題" onclick="questionBack()" >
+</div>
+
+
+<div id="Qbutton2">
+<input type="button" value="次の問題" onclick="nextQuestion()">
+</div>
+
+
+</body>
+</html>

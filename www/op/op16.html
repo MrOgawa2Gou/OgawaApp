@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="../components/loader.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../components/loader.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+<body id="color"> 
+  <form>
+  <select id="PullMenu" onChange="JumpPage();">
+　　　<option value="#"></option>
+      <option value="1">問1 経宮戦略</option>
+      <option value="2">問2 経宮戦略</option>
+      <option value="3">問3 マーケティング</option>
+　　　<option value="4">問4 経宮戦略</option>
+　　　<option value="5">問5 経宮戦略</option>
+　　　<option value="6">問6 経宮戦略</option>
+　　　<option value="7">問7 経宮戦略 動画</option>
+　　　<option value="8">問8 経宮戦略</option>
+　　　<option value="9">問9 経宮戦略</option>
+　　　<option value="10">問10 経宮戦略</option>　
+　　　<option value="11">問11 経宮戦略</option>
+　　　<option value="12">問12 経宮戦略</option>
+　　　<option value="13">問13 経宮戦略</option>
+　　　<option value="14">問14 経宮戦略</option>
+　　　<option value="15">問15 業務改善・分.. 動画</option>
+　　　<option value="16">問16 システム化計画</option>
+　　　<option value="17">問17 マーケティング</option>
+　　　<option value="18">問18 経宮戦略</option>
+　　　<option value="19">問19 情報システム</option>
+　　　<option value="20">問20 業務改善・分析・</option>
+　　　<option value="21">問21 ソフトウェア開発</option>
+　　　<option value="22">問22 生産計画 動画</option>
+　　　<option value="23">問23 経宮戦略</option>
+　　　<option value="24">問24 経宮戦略</option>
+　　　<option value="25">問25 シミュレーション 動画</option>
+　　　<option value="26">問26 特許法</option>
+　　　<option value="27">問27 業務改善・分析・</option>
+　　　<option value="28">問28 経宮戦略</option>
+　　　<option value="29">問29 経宮戦略</option>
+　　　<option value="30">問30 経宮戦略</option>
+　　　<option value="31">問31 意思決定理論</option>
+　　　<option value="32">問32 経宮戦略</option>
+　　　<option value="33">問33 経宮戦略</option>
+　　　<option value="34">問34 システム化計画</option>
+　　　<option value="35">問35 規格標準</option>
+　　　<option value="36">問36 特許法</option>
+　　　<option value="37">問37 インターネッ..</option>
+　　　<option value="38">問38 経宮戦略</option>
+　　　<option value="39">問39 経宮戦略</option>
+　　　<option value="40">問40 インターネッ..  </option>
+</select>
+</form>
+
+<div style="text-align: center">
+
+        <h1 id="qNumD"></h1>
+        
+        <p id="question"></p>
+        
+        <div id="answer_options">
+        </div>
+        
+</div>
+
+<div id="Qbutton1">
+<input type="button" value="前の問題" onclick="questionBack()" >
+</div>
+
+
+<div id="Qbutton2">
+<input type="button" value="次の問題" onclick="nextQuestion()">
+</div>
+
+</body>
+</html>

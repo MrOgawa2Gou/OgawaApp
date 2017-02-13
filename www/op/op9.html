@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="../components/loader.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../components/loader.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+<body id="color"> 
+  <form>
+  <select id="PullMenu" onChange="JumpPage();">
+　　　<option value="#"></option>
+      <option value="1">問1 ヒューマンイ..</option>
+      <option value="2">問2 ヒューマンインタ</option>
+      <option value="3">問3 システムの運..</option>
+　　　<option value="4">問4 誤り制御方式 動画</option>　　　　　
+　　　<option value="5">問5 データ中心設計 動画</option>　　　　
+　　　<option value="6">問6 その他のテス..</option>　
+　　　<option value="7">問7 ヒューマンイ..</option>
+　　　<option value="8">問8 ヒューマンイ..</option>
+　　　<option value="9">問9 ヒューマンイ..</option>
+　　　<option value="10">問10 Web</option>　
+　　　<option value="11">問11 CAD／CA..</option>
+　　　<option value="12">問12 Web</option>
+　　　<option value="13">問13 応用システム</option>
+　　　<option value="14">問14 ファイル形式..</option>
+　　　<option value="15">問15 EUC</option>
+　　　<option value="16">問16 開発ツール</option>
+　　　<option value="17">問17 ディジタル伝送 動画</option>
+　　　<option value="18">問18 処理形態 動画</option>
+　　　<option value="19">問19 JPEG</option>
+　　　<option value="20">問20</option>
+　　　<option value="21">問21 RDB</option>
+　　　<option value="22">問22 3層スキーマ 動画</option>
+　　　<option value="23">問23 SQL</option>
+　　　<option value="24">問24 SQL</option>
+　　　<option value="25">問25 SQL</option>
+　　　<option value="26">問26 3層スキーマ</option>
+　　　<option value="27">問27 関係演算 動画</option>
+　　　<option value="28">問28 DBの制御機能</option>
+　　　<option value="29">問29 正規化</option>
+　　　<option value="30">問30 レプリケーション</option>
+　　　<option value="31">問31 正規化</option>
+　　　<option value="32">問32 E-R図</option>
+　　　<option value="33">問33 概念データモデル</option>
+　　　<option value="34">問34 DBのリカバリ</option>
+　　　<option value="35">問35 DBのトランザク</option>
+　　　<option value="36">問36 DBの排他制御</option>
+　　　<option value="37">問37 DBの排他制御</option>
+　　　<option value="38">問38 DBMSの特徴</option>
+　　　<option value="39">問39 概念データモデル</option>
+　　　<option value="40">問40 ERD</option>
+</select>
+</form>
+
+<div style="text-align: center">
+
+        <h1 id="qNumD"></h1>
+        
+        <p id="question"></p>
+        
+        <div id="answer_options">
+        </div>
+        
+</div>
+
+<div id="Qbutton1">
+<input type="button" value="前の問題" onclick="questionBack()" >
+</div>
+
+
+<div id="Qbutton2">
+<input type="button" value="次の問題" onclick="nextQuestion()">
+</div>
+
+
+</body>
+</html>
