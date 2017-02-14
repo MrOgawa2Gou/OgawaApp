@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="../components/loader.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../components/loader.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+<body id="color"> 
+  <form>
+  <select id="PullMenu" onChange="JumpPage();">
+　　　<option value="#"></option>
+      <option value="1">問1 2進数，8進..</option>
+      <option value="2">問2 基数変換FE..</option>
+      <option value="3">問3 その他の数値表現</option>
+　　　<option value="4">問4 演算と精度</option>　　　　　
+　　　<option value="5">問5 数値計算 動画</option>　　　　
+　　　<option value="6">問6 その他のアル.. 動画</option>　
+　　　<option value="7">問7 統計 動画</option>
+　　　<option value="8">問8 論理演算 動画</option>
+　　　<option value="9">問9 論理演算</option>
+　　　<option value="10">問10 その他の数値表現 動画</option>　
+　　　<option value="11">問11 基数変換情報.. 動画</option>
+　　　<option value="12">問12 整列のアルゴ..</option>
+　　　<option value="13">問13 リスト 動画</option>
+　　　<option value="14">問14 整列のアルゴ.. 動画</option>
+　　　<option value="15">問15 探索のアルゴ..</option>
+　　　<option value="16">問16 基数変換 動画</option>
+　　　<option value="17">問17 基数変換 動画</option>
+　　　<option value="18">問18 固定小数点数 動画</option>
+　　　<option value="19">問19 浮動小数点数</option>
+　　　<option value="20">問20 論理演算 動画</option>
+　　　<option value="21">問21 2進数，8進.. 動画</option>
+　　　<option value="22">問22 論理演算</option>
+　　　<option value="23">問23 情報論理と符.. 動画</option>
+　　　<option value="24">問24 オートマトン 動画</option>
+　　　<option value="25">問25 スタック</option>
+　　　<option value="26">問26 整列のアルゴ..</option>
+　　　<option value="27">問27 基数変換整列..</option>
+　　　<option value="28">問28 プログラム構造 動画</option>
+　　　<option value="29">問29 仮想記憶</option>
+　　　<option value="30">問30 2進数，8進数， 動画</option>
+　　　<option value="31">問31 論理演算 動画</option>
+　　　<option value="32">問32 演算と精度</option>
+　　　<option value="33">問33 その他のアルゴリ 動画</option>
+　　　<option value="34">問34 確率 動画</option>
+　　　<option value="35">問35 論理演算</option>
+　　　<option value="36">問36 論理演算 動画</option>
+　　　<option value="37">問37 論理演算 動画</option>
+　　　<option value="38">問38 オートマトン 動画</option>
+　　　<option value="39">問39 オートマトン 動画</option>
+　　　<option value="40">問40 2分探索木 動画</option>
+</select>
+</form>
+
+<div style="text-align: center">
+
+        <h1 id="qNumD"></h1>
+        
+        <p id="question"></p>
+        
+        <div id="answer_options">
+        </div>
+        
+</div>
+
+
+<input type="button" value="前の問題" onclick="questionBack()" id="Qbutton1">
+
+
+
+<input type="button" value="次の問題" onclick="nextQuestion()" id="Qbutton2">
+
+
+</body>
+</html>
